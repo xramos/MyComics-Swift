@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1500002BBD665400513DD7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFFF2BBD665400513DD7 /* Repository.swift */; };
+		DA1500022BBD668700513DD7 /* RepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1500012BBD668700513DD7 /* RepositoryImplementation.swift */; };
+		DA1500042BBD66D000513DD7 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1500032BBD66D000513DD7 /* RemoteDataSource.swift */; };
+		DA1500072BBD688E00513DD7 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1500062BBD688E00513DD7 /* URLProtocolMock.swift */; };
+		DA15000A2BBD68D500513DD7 /* RemoteDataSourceUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1500092BBD68D500513DD7 /* RemoteDataSourceUnitTests.swift */; };
+		DA15000C2BBD696800513DD7 /* RepositoryImplementationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15000B2BBD696800513DD7 /* RepositoryImplementationUnitTests.swift */; };
 		DA15FFA72BBD5DC900513DD7 /* MyComicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFA62BBD5DC900513DD7 /* MyComicsApp.swift */; };
 		DA15FFA92BBD5DC900513DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFA82BBD5DC900513DD7 /* ContentView.swift */; };
 		DA15FFAB2BBD5DCA00513DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA15FFAA2BBD5DCA00513DD7 /* Assets.xcassets */; };
@@ -50,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA1500012BBD668700513DD7 /* RepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImplementation.swift; sourceTree = "<group>"; };
+		DA1500032BBD66D000513DD7 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		DA1500062BBD688E00513DD7 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		DA1500092BBD68D500513DD7 /* RemoteDataSourceUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceUnitTests.swift; sourceTree = "<group>"; };
+		DA15000B2BBD696800513DD7 /* RepositoryImplementationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImplementationUnitTests.swift; sourceTree = "<group>"; };
 		DA15FFA32BBD5DC900513DD7 /* MyComics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyComics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA15FFA62BBD5DC900513DD7 /* MyComicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicsApp.swift; sourceTree = "<group>"; };
 		DA15FFA82BBD5DC900513DD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +88,7 @@
 		DA15FFF82BBD62E800513DD7 /* ServerImageModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerImageModelUnitTests.swift; sourceTree = "<group>"; };
 		DA15FFFA2BBD640200513DD7 /* ServerPowerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPowerUnitTests.swift; sourceTree = "<group>"; };
 		DA15FFFC2BBD643B00513DD7 /* CharacterUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUnitTests.swift; sourceTree = "<group>"; };
+		DA15FFFF2BBD665400513DD7 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1500052BBD688400513DD7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1500062BBD688E00513DD7 /* URLProtocolMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DA1500082BBD68B700513DD7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DA1500092BBD68D500513DD7 /* RemoteDataSourceUnitTests.swift */,
+				DA15000B2BBD696800513DD7 /* RepositoryImplementationUnitTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		DA15FF9A2BBD5DC900513DD7 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +156,7 @@
 		DA15FFA52BBD5DC900513DD7 /* MyComics */ = {
 			isa = PBXGroup;
 			children = (
+				DA15FFFE2BBD664600513DD7 /* Repositories */,
 				DA15FFD92BBD5FA900513DD7 /* Entitites */,
 				DA15FFD42BBD5EBE00513DD7 /* Enumerations */,
 				DA15FFD12BBD5E6E00513DD7 /* Network */,
@@ -151,6 +181,8 @@
 		DA15FFB72BBD5DCB00513DD7 /* MyComicsTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA1500082BBD68B700513DD7 /* Repositories */,
+				DA1500052BBD688400513DD7 /* Mocks */,
 				DA15FFF12BBD626D00513DD7 /* Entities */,
 			);
 			path = MyComicsTests;
@@ -255,6 +287,16 @@
 				DA15FFFC2BBD643B00513DD7 /* CharacterUnitTests.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		DA15FFFE2BBD664600513DD7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFFF2BBD665400513DD7 /* Repository.swift */,
+				DA1500012BBD668700513DD7 /* RepositoryImplementation.swift */,
+				DA1500032BBD66D000513DD7 /* RemoteDataSource.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,9 +434,12 @@
 				DA15FFD82BBD5F3F00513DD7 /* Constants.swift in Sources */,
 				DA15FFD62BBD5EC800513DD7 /* HTTPError.swift in Sources */,
 				DA15FFA92BBD5DC900513DD7 /* ContentView.swift in Sources */,
+				DA1500042BBD66D000513DD7 /* RemoteDataSource.swift in Sources */,
 				DA15FFEE2BBD61C200513DD7 /* ServerCharacter.swift in Sources */,
 				DA15FFD32BBD5E8100513DD7 /* ComicsNetworkManager.swift in Sources */,
 				DA15FFE22BBD603400513DD7 /* ServerBaseResponse.swift in Sources */,
+				DA1500022BBD668700513DD7 /* RepositoryImplementation.swift in Sources */,
+				DA1500002BBD665400513DD7 /* Repository.swift in Sources */,
 				DA15FFDE2BBD5FD300513DD7 /* ServerImageModel.swift in Sources */,
 				DA15FFEA2BBD618200513DD7 /* Power.swift in Sources */,
 				DA15FFEC2BBD61AD00513DD7 /* Gender.swift in Sources */,
@@ -410,9 +455,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA15000A2BBD68D500513DD7 /* RemoteDataSourceUnitTests.swift in Sources */,
+				DA1500072BBD688E00513DD7 /* URLProtocolMock.swift in Sources */,
 				DA15FFF92BBD62E800513DD7 /* ServerImageModelUnitTests.swift in Sources */,
 				DA15FFF72BBD628F00513DD7 /* ServerCharacterUnitTests.swift in Sources */,
 				DA15FFFB2BBD640200513DD7 /* ServerPowerUnitTests.swift in Sources */,
+				DA15000C2BBD696800513DD7 /* RepositoryImplementationUnitTests.swift in Sources */,
 				DA15FFFD2BBD643B00513DD7 /* CharacterUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
