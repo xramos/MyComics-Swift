@@ -11,12 +11,25 @@
 		DA15FFA92BBD5DC900513DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFA82BBD5DC900513DD7 /* ContentView.swift */; };
 		DA15FFAB2BBD5DCA00513DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA15FFAA2BBD5DCA00513DD7 /* Assets.xcassets */; };
 		DA15FFAF2BBD5DCA00513DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA15FFAE2BBD5DCA00513DD7 /* Preview Assets.xcassets */; };
-		DA15FFB92BBD5DCB00513DD7 /* MyComicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFB82BBD5DCB00513DD7 /* MyComicsTests.swift */; };
 		DA15FFC32BBD5DCB00513DD7 /* MyComicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFC22BBD5DCB00513DD7 /* MyComicsUITests.swift */; };
 		DA15FFC52BBD5DCB00513DD7 /* MyComicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFC42BBD5DCB00513DD7 /* MyComicsUITestsLaunchTests.swift */; };
 		DA15FFD32BBD5E8100513DD7 /* ComicsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFD22BBD5E8100513DD7 /* ComicsNetworkManager.swift */; };
 		DA15FFD62BBD5EC800513DD7 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFD52BBD5EC800513DD7 /* HTTPError.swift */; };
 		DA15FFD82BBD5F3F00513DD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFD72BBD5F3F00513DD7 /* Constants.swift */; };
+		DA15FFDE2BBD5FD300513DD7 /* ServerImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFDD2BBD5FD300513DD7 /* ServerImageModel.swift */; };
+		DA15FFE02BBD5FF000513DD7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFDF2BBD5FF000513DD7 /* ImageModel.swift */; };
+		DA15FFE22BBD603400513DD7 /* ServerBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFE12BBD603400513DD7 /* ServerBaseResponse.swift */; };
+		DA15FFE42BBD604700513DD7 /* ServerBaseArrayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFE32BBD604700513DD7 /* ServerBaseArrayResponse.swift */; };
+		DA15FFE62BBD606E00513DD7 /* ServerOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFE52BBD606E00513DD7 /* ServerOrigin.swift */; };
+		DA15FFE82BBD612300513DD7 /* ServerPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFE72BBD612300513DD7 /* ServerPower.swift */; };
+		DA15FFEA2BBD618200513DD7 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFE92BBD618200513DD7 /* Power.swift */; };
+		DA15FFEC2BBD61AD00513DD7 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFEB2BBD61AD00513DD7 /* Gender.swift */; };
+		DA15FFEE2BBD61C200513DD7 /* ServerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFED2BBD61C200513DD7 /* ServerCharacter.swift */; };
+		DA15FFF02BBD621300513DD7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFEF2BBD621300513DD7 /* Character.swift */; };
+		DA15FFF72BBD628F00513DD7 /* ServerCharacterUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFF62BBD628F00513DD7 /* ServerCharacterUnitTests.swift */; };
+		DA15FFF92BBD62E800513DD7 /* ServerImageModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFF82BBD62E800513DD7 /* ServerImageModelUnitTests.swift */; };
+		DA15FFFB2BBD640200513DD7 /* ServerPowerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFFA2BBD640200513DD7 /* ServerPowerUnitTests.swift */; };
+		DA15FFFD2BBD643B00513DD7 /* CharacterUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15FFFC2BBD643B00513DD7 /* CharacterUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +57,26 @@
 		DA15FFAC2BBD5DCA00513DD7 /* MyComics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyComics.entitlements; sourceTree = "<group>"; };
 		DA15FFAE2BBD5DCA00513DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA15FFB42BBD5DCB00513DD7 /* MyComicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyComicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA15FFB82BBD5DCB00513DD7 /* MyComicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicsTests.swift; sourceTree = "<group>"; };
 		DA15FFBE2BBD5DCB00513DD7 /* MyComicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyComicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA15FFC22BBD5DCB00513DD7 /* MyComicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicsUITests.swift; sourceTree = "<group>"; };
 		DA15FFC42BBD5DCB00513DD7 /* MyComicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA15FFD22BBD5E8100513DD7 /* ComicsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsNetworkManager.swift; sourceTree = "<group>"; };
 		DA15FFD52BBD5EC800513DD7 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		DA15FFD72BBD5F3F00513DD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA15FFDD2BBD5FD300513DD7 /* ServerImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerImageModel.swift; sourceTree = "<group>"; };
+		DA15FFDF2BBD5FF000513DD7 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		DA15FFE12BBD603400513DD7 /* ServerBaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerBaseResponse.swift; sourceTree = "<group>"; };
+		DA15FFE32BBD604700513DD7 /* ServerBaseArrayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerBaseArrayResponse.swift; sourceTree = "<group>"; };
+		DA15FFE52BBD606E00513DD7 /* ServerOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOrigin.swift; sourceTree = "<group>"; };
+		DA15FFE72BBD612300513DD7 /* ServerPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPower.swift; sourceTree = "<group>"; };
+		DA15FFE92BBD618200513DD7 /* Power.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		DA15FFEB2BBD61AD00513DD7 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		DA15FFED2BBD61C200513DD7 /* ServerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCharacter.swift; sourceTree = "<group>"; };
+		DA15FFEF2BBD621300513DD7 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		DA15FFF62BBD628F00513DD7 /* ServerCharacterUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCharacterUnitTests.swift; sourceTree = "<group>"; };
+		DA15FFF82BBD62E800513DD7 /* ServerImageModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerImageModelUnitTests.swift; sourceTree = "<group>"; };
+		DA15FFFA2BBD640200513DD7 /* ServerPowerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPowerUnitTests.swift; sourceTree = "<group>"; };
+		DA15FFFC2BBD643B00513DD7 /* CharacterUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +127,7 @@
 		DA15FFA52BBD5DC900513DD7 /* MyComics */ = {
 			isa = PBXGroup;
 			children = (
+				DA15FFD92BBD5FA900513DD7 /* Entitites */,
 				DA15FFD42BBD5EBE00513DD7 /* Enumerations */,
 				DA15FFD12BBD5E6E00513DD7 /* Network */,
 				DA15FFA62BBD5DC900513DD7 /* MyComicsApp.swift */,
@@ -124,7 +151,7 @@
 		DA15FFB72BBD5DCB00513DD7 /* MyComicsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA15FFB82BBD5DCB00513DD7 /* MyComicsTests.swift */,
+				DA15FFF12BBD626D00513DD7 /* Entities */,
 			);
 			path = MyComicsTests;
 			sourceTree = "<group>";
@@ -150,8 +177,84 @@
 			isa = PBXGroup;
 			children = (
 				DA15FFD52BBD5EC800513DD7 /* HTTPError.swift */,
+				DA15FFEB2BBD61AD00513DD7 /* Gender.swift */,
 			);
 			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		DA15FFD92BBD5FA900513DD7 /* Entitites */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFDA2BBD5FA900513DD7 /* DBEntities */,
+				DA15FFDB2BBD5FA900513DD7 /* ServerEntities */,
+				DA15FFDC2BBD5FA900513DD7 /* Entities */,
+			);
+			path = Entitites;
+			sourceTree = "<group>";
+		};
+		DA15FFDA2BBD5FA900513DD7 /* DBEntities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DBEntities;
+			sourceTree = "<group>";
+		};
+		DA15FFDB2BBD5FA900513DD7 /* ServerEntities */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFDD2BBD5FD300513DD7 /* ServerImageModel.swift */,
+				DA15FFE12BBD603400513DD7 /* ServerBaseResponse.swift */,
+				DA15FFE32BBD604700513DD7 /* ServerBaseArrayResponse.swift */,
+				DA15FFE52BBD606E00513DD7 /* ServerOrigin.swift */,
+				DA15FFE72BBD612300513DD7 /* ServerPower.swift */,
+				DA15FFED2BBD61C200513DD7 /* ServerCharacter.swift */,
+			);
+			path = ServerEntities;
+			sourceTree = "<group>";
+		};
+		DA15FFDC2BBD5FA900513DD7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFDF2BBD5FF000513DD7 /* ImageModel.swift */,
+				DA15FFE92BBD618200513DD7 /* Power.swift */,
+				DA15FFEF2BBD621300513DD7 /* Character.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DA15FFF12BBD626D00513DD7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFF22BBD626D00513DD7 /* DBEntities */,
+				DA15FFF32BBD626D00513DD7 /* ServerEntities */,
+				DA15FFF42BBD626D00513DD7 /* Entities */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DA15FFF22BBD626D00513DD7 /* DBEntities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DBEntities;
+			sourceTree = "<group>";
+		};
+		DA15FFF32BBD626D00513DD7 /* ServerEntities */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFF62BBD628F00513DD7 /* ServerCharacterUnitTests.swift */,
+				DA15FFF82BBD62E800513DD7 /* ServerImageModelUnitTests.swift */,
+				DA15FFFA2BBD640200513DD7 /* ServerPowerUnitTests.swift */,
+			);
+			path = ServerEntities;
+			sourceTree = "<group>";
+		};
+		DA15FFF42BBD626D00513DD7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DA15FFFC2BBD643B00513DD7 /* CharacterUnitTests.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +328,7 @@
 					};
 					DA15FFB32BBD5DCB00513DD7 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = DA15FFA22BBD5DC900513DD7;
 					};
 					DA15FFBD2BBD5DCB00513DD7 = {
@@ -284,11 +388,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA15FFE82BBD612300513DD7 /* ServerPower.swift in Sources */,
 				DA15FFD82BBD5F3F00513DD7 /* Constants.swift in Sources */,
 				DA15FFD62BBD5EC800513DD7 /* HTTPError.swift in Sources */,
 				DA15FFA92BBD5DC900513DD7 /* ContentView.swift in Sources */,
+				DA15FFEE2BBD61C200513DD7 /* ServerCharacter.swift in Sources */,
 				DA15FFD32BBD5E8100513DD7 /* ComicsNetworkManager.swift in Sources */,
+				DA15FFE22BBD603400513DD7 /* ServerBaseResponse.swift in Sources */,
+				DA15FFDE2BBD5FD300513DD7 /* ServerImageModel.swift in Sources */,
+				DA15FFEA2BBD618200513DD7 /* Power.swift in Sources */,
+				DA15FFEC2BBD61AD00513DD7 /* Gender.swift in Sources */,
+				DA15FFE62BBD606E00513DD7 /* ServerOrigin.swift in Sources */,
 				DA15FFA72BBD5DC900513DD7 /* MyComicsApp.swift in Sources */,
+				DA15FFF02BBD621300513DD7 /* Character.swift in Sources */,
+				DA15FFE02BBD5FF000513DD7 /* ImageModel.swift in Sources */,
+				DA15FFE42BBD604700513DD7 /* ServerBaseArrayResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA15FFB92BBD5DCB00513DD7 /* MyComicsTests.swift in Sources */,
+				DA15FFF92BBD62E800513DD7 /* ServerImageModelUnitTests.swift in Sources */,
+				DA15FFF72BBD628F00513DD7 /* ServerCharacterUnitTests.swift in Sources */,
+				DA15FFFB2BBD640200513DD7 /* ServerPowerUnitTests.swift in Sources */,
+				DA15FFFD2BBD643B00513DD7 /* CharacterUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +633,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,6 +645,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyComics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyComics";
@@ -538,6 +658,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -549,6 +670,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyComics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyComics";
