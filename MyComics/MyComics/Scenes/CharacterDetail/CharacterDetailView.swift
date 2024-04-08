@@ -101,48 +101,83 @@ private extension CharacterDetailView {
                 
                 titleView(title: viewModel.localization.birth,
                           value: viewModel.character.birth)
+            }
+            
+            titleView(title: viewModel.localization.gender,
+                      value: viewModel.character.getGender())
+            
+            if !viewModel.character.origin.isEmpty {
                 
-                Spacer().frame(height: Value.spaceHeight)
+                titleView(title: viewModel.localization.origin,
+                          value: viewModel.character.origin)
+            }
+            
+            if !viewModel.character.aliases.isEmpty {
+                
+                infoView(title: viewModel.localization.alias,
+                         value: viewModel.character.aliases)
+            }
+            
+            if !viewModel.character.getPowers().isEmpty {
+                
+                infoView(title: viewModel.localization.powers,
+                         value: viewModel.character.getPowers())
+            }
+            
+            if !viewModel.character.deck.isEmpty {
+                
+                infoView(title: viewModel.localization.description,
+                         value: viewModel.character.deck)
             }
         }
     }
     
     func titleView(title: String, value: String) -> some View {
         
-        HStack(alignment: .center) {
+        Group {
             
-            VStack(alignment: .leading) {
+            HStack(alignment: .center) {
                 
-                Text(title)
-                    .font(.headline)
+                VStack(alignment: .leading) {
+                    
+                    Text(title)
+                        .font(.headline)
+                }
+                
+                Spacer()
+                
+                VStack(alignment: .trailing) {
+                    
+                    Text(value)
+                        .font(.body)
+                }
             }
             
-            Spacer()
-            
-            VStack(alignment: .trailing) {
-                
-                Text(value)
-                    .font(.body)
-            }
+            Spacer().frame(height: Value.spaceHeight)
         }
     }
     
     func infoView(title: String, value: String) -> some View {
         
-        HStack(alignment: .center) {
+        Group {
             
-            VStack(alignment: .leading) {
+            HStack(alignment: .center) {
                 
-                Text(title)
-                    .font(.headline)
+                VStack(alignment: .leading) {
+                    
+                    Text(title)
+                        .font(.headline)
+                    
+                    Spacer().frame(height: Value.spaceHeight)
+                    
+                    Text(value)
+                        .font(.body)
+                }
                 
-                Spacer().frame(height: Value.spaceHeight)
-                
-                Text(value)
-                    .font(.body)
+                Spacer()
             }
             
-            Spacer()
+            Spacer().frame(height: Value.spaceHeight)
         }
     }
 }
