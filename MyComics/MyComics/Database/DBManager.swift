@@ -36,6 +36,7 @@ extension DBManager: Persistence {
             
             let dbCharacter = DBCharacter(context: coreDataStack.managedContext)
             dbCharacter.id = Int32(character.id)
+            dbCharacter.characterId = Int32(character.id)
             dbCharacter.name = character.name
             dbCharacter.realName = character.realName
             dbCharacter.aliases = character.aliases
@@ -62,7 +63,8 @@ extension DBManager: Persistence {
         let characterId = Int32(character.id)
         
         let fetchRequest = NSFetchRequest<DBCharacter>(entityName: "DBCharacter")
-        fetchRequest.predicate = NSPredicate(format: "id==\(characterId)")
+        fetchRequest.predicate = NSPredicate(format: "characterId==\(characterId)")
+        
         do {
             
             let dbCharacters = try coreDataStack.managedContext.fetch(fetchRequest)
@@ -79,25 +81,21 @@ extension DBManager: Persistence {
         }
     }
     
+    func getCharacter(id: Int) -> Character? {
+        
+        let characters = getCharacters()
+        
+        for character in characters where character.id == id {
+            
+            return character
+        }
+        
+        return nil
+    }
+    
     func existCharacter(character: Character) -> Bool {
         
-        let characterId = Int32(character.id)
-        
-        let fetchRequest = NSFetchRequest<DBCharacter>(entityName: "DBCharacter")
-        fetchRequest.predicate = NSPredicate(format: "id==\(characterId)")
-        
-        do {
-            
-            let dbCharacters = try coreDataStack.managedContext.fetch(fetchRequest)
-            
-            return dbCharacters.first != nil
-            
-        } catch let error as NSError {
-            
-            print("Could not fetch for delete. \(error), \(error.userInfo)")
-            
-            return false
-        }
+        return getCharacter(id: character.id) != nil
     }
     
     func getCharacters() -> [Character] {
@@ -121,33 +119,5 @@ extension DBManager: Persistence {
         }
         
         return characters
-    }
-    
-    func getCharacter(id: Int) -> Character? {
-        
-        let characterId = Int32(id)
-        
-        let fetchRequest = NSFetchRequest<DBCharacter>(entityName: "DBCharacter")
-        fetchRequest.predicate = NSPredicate(format: "id==\(characterId)")
-        
-        do {
-            
-            let dbCharacters = try coreDataStack.managedContext.fetch(fetchRequest)
-            
-            if let dbCharacter = dbCharacters.first {
-                
-                return dbCharacter.convertToEntity()
-                
-            } else {
-                
-                return nil
-            }
-            
-        } catch let error as NSError {
-            
-            print("Could not fetch character id. \(error), \(error.userInfo)")
-            
-            return nil
-        }
     }
 }

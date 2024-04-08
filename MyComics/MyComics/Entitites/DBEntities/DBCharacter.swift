@@ -20,7 +20,7 @@ extension DBCharacter {
             pows = dbPowers.map({ $0.convertToEntity()})
         }
         
-        return Character(id: Int(id),
+        return Character(id: Int(characterId),
                          name: name ?? "",
                          realName: realName ?? "",
                          aliases: aliases ?? "",
