@@ -51,6 +51,8 @@
 		DAD60F882BC3FCFF001ED57A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F872BC3FCFF001ED57A /* PreviewView.swift */; };
 		DAD60F8A2BC4086D001ED57A /* CharacterDetailLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F892BC4086D001ED57A /* CharacterDetailLocalization.swift */; };
 		DAD60F8C2BC42CD3001ED57A /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */; };
+		DAD60F8E2BC42EC2001ED57A /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8D2BC42EC2001ED57A /* FavoritesViewModel.swift */; };
+		DAD60F902BC42FA1001ED57A /* FavoritesLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8F2BC42FA1001ED57A /* FavoritesLocalization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		DAD60F872BC3FCFF001ED57A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		DAD60F892BC4086D001ED57A /* CharacterDetailLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLocalization.swift; sourceTree = "<group>"; };
 		DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
+		DAD60F8D2BC42EC2001ED57A /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		DAD60F8F2BC42FA1001ED57A /* FavoritesLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesLocalization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				DAD60F6F2BC3ECBD001ED57A /* FavoritesView.swift */,
+				DAD60F8D2BC42EC2001ED57A /* FavoritesViewModel.swift */,
+				DAD60F8F2BC42FA1001ED57A /* FavoritesLocalization.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -549,6 +555,7 @@
 				DA15FFD32BBD5E8100513DD7 /* ComicsNetworkManager.swift in Sources */,
 				DAD60F882BC3FCFF001ED57A /* PreviewView.swift in Sources */,
 				DA15FFE22BBD603400513DD7 /* ServerBaseResponse.swift in Sources */,
+				DAD60F902BC42FA1001ED57A /* FavoritesLocalization.swift in Sources */,
 				DA1500022BBD668700513DD7 /* RepositoryImplementation.swift in Sources */,
 				DA1500002BBD665400513DD7 /* Repository.swift in Sources */,
 				DAD60F832BC3F73B001ED57A /* CharacterListView.swift in Sources */,
@@ -563,6 +570,7 @@
 				DA15FFEA2BBD618200513DD7 /* Power.swift in Sources */,
 				DAD60F7B2BC3F514001ED57A /* CharacterDetailView.swift in Sources */,
 				DAD60F852BC3FA29001ED57A /* Value.swift in Sources */,
+				DAD60F8E2BC42EC2001ED57A /* FavoritesViewModel.swift in Sources */,
 				DA15FFEC2BBD61AD00513DD7 /* Gender.swift in Sources */,
 				DA15FFE62BBD606E00513DD7 /* ServerOrigin.swift in Sources */,
 				DAD60F742BC3EFBB001ED57A /* SearchViewModel.swift in Sources */,

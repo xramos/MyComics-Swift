@@ -8,8 +8,49 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    @StateObject var viewModel: FavoritesViewModel = FavoritesViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       
+        VStack {
+            
+            if viewModel.characters.isEmpty {
+                
+                Spacer()
+                
+                Text(viewModel.localization.empty)
+                    .font(.body)
+                
+                Spacer()
+                
+            } else {
+                
+                characterListView
+            }
+            
+        }.onAppear {
+            
+            viewModel.getFavoriteCharacters()
+        }
+    }
+    
+    @ViewBuilder
+    var characterListView: some View {
+        
+        ScrollView {
+            
+            ForEach(viewModel.characters) { character in
+            
+                NavigationLink(destination: CharacterDetailView(viewModel: CharacterDetailViewModel(character: character))) {
+                    
+                    CharacterListView(image: character.image?.smallUrl,
+                                      name: character.name,
+                                      realName: character.realName)
+                }
+                .buttonStyle(.plain)
+            }
+        }
     }
 }
 
