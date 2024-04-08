@@ -25,6 +25,6 @@ class FavoritesViewModel: ObservableObject {
     
     func getFavoriteCharacters() {
         
-        // TODO: Add GetFavoriteCharactersUseCase
+        characters = GetCharactersUseCase().execute()
     }
 }

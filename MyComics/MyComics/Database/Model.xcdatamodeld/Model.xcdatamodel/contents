@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="DBCharacter" representedClassName="DBCharacter" syncable="YES" codeGenerationType="class">
+        <attribute name="aliases" optional="YES" attributeType="String"/>
+        <attribute name="birth" optional="YES" attributeType="String"/>
+        <attribute name="deck" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" transient="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="origin" optional="YES" attributeType="String"/>
+        <attribute name="realName" optional="YES" attributeType="String"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBImage" inverseName="character" inverseEntity="DBImage"/>
+        <relationship name="powers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBPower" inverseName="character" inverseEntity="DBPower"/>
+    </entity>
+    <entity name="DBImage" representedClassName="DBImage" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="smallUrl" optional="YES" attributeType="String"/>
+        <attribute name="superUrl" optional="YES" attributeType="String"/>
+        <attribute name="thumbUrl" optional="YES" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBCharacter" inverseName="image" inverseEntity="DBCharacter"/>
+    </entity>
+    <entity name="DBPower" representedClassName="DBPower" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBCharacter" inverseName="powers" inverseEntity="DBCharacter"/>
+    </entity>
+</model>

@@ -53,6 +53,18 @@
 		DAD60F8C2BC42CD3001ED57A /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */; };
 		DAD60F8E2BC42EC2001ED57A /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8D2BC42EC2001ED57A /* FavoritesViewModel.swift */; };
 		DAD60F902BC42FA1001ED57A /* FavoritesLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8F2BC42FA1001ED57A /* FavoritesLocalization.swift */; };
+		DAD60F932BC4310A001ED57A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F922BC4310A001ED57A /* Persistence.swift */; };
+		DAD60F952BC431A6001ED57A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F942BC431A6001ED57A /* CoreDataStack.swift */; };
+		DAD60F972BC431C1001ED57A /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F962BC431C1001ED57A /* DBManager.swift */; };
+		DAD60F992BC43220001ED57A /* DBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F982BC43220001ED57A /* DBImage.swift */; };
+		DAD60F9C2BC43252001ED57A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F9A2BC43252001ED57A /* Model.xcdatamodeld */; };
+		DAD60F9E2BC43478001ED57A /* DBPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F9D2BC43478001ED57A /* DBPower.swift */; };
+		DAD60FA02BC434B7001ED57A /* DBCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F9F2BC434B7001ED57A /* DBCharacter.swift */; };
+		DAD60FA22BC43658001ED57A /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60FA12BC43658001ED57A /* LocalDataSource.swift */; };
+		DAD60FA42BC4384D001ED57A /* SaveCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60FA32BC4384D001ED57A /* SaveCharacterUseCase.swift */; };
+		DAD60FA62BC438A0001ED57A /* RemoveCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60FA52BC438A0001ED57A /* RemoveCharacterUseCase.swift */; };
+		DAD60FA82BC438D7001ED57A /* ExistCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60FA72BC438D7001ED57A /* ExistCharacterUseCase.swift */; };
+		DAD60FAA2BC4392D001ED57A /* GetCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60FA92BC4392D001ED57A /* GetCharactersUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +135,18 @@
 		DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
 		DAD60F8D2BC42EC2001ED57A /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		DAD60F8F2BC42FA1001ED57A /* FavoritesLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesLocalization.swift; sourceTree = "<group>"; };
+		DAD60F922BC4310A001ED57A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DAD60F942BC431A6001ED57A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DAD60F962BC431C1001ED57A /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		DAD60F982BC43220001ED57A /* DBImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBImage.swift; sourceTree = "<group>"; };
+		DAD60F9B2BC43252001ED57A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DAD60F9D2BC43478001ED57A /* DBPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPower.swift; sourceTree = "<group>"; };
+		DAD60F9F2BC434B7001ED57A /* DBCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCharacter.swift; sourceTree = "<group>"; };
+		DAD60FA12BC43658001ED57A /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		DAD60FA32BC4384D001ED57A /* SaveCharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCharacterUseCase.swift; sourceTree = "<group>"; };
+		DAD60FA52BC438A0001ED57A /* RemoveCharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCharacterUseCase.swift; sourceTree = "<group>"; };
+		DAD60FA72BC438D7001ED57A /* ExistCharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistCharacterUseCase.swift; sourceTree = "<group>"; };
+		DAD60FA92BC4392D001ED57A /* GetCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharactersUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +214,7 @@
 		DA15FFA52BBD5DC900513DD7 /* MyComics */ = {
 			isa = PBXGroup;
 			children = (
+				DAD60F912BC43101001ED57A /* Database */,
 				DAD60F812BC3F724001ED57A /* Views */,
 				DAD60F7C2BC3F5DA001ED57A /* UseCases */,
 				DAD60F652BC3EBC2001ED57A /* Scenes */,
@@ -264,6 +289,9 @@
 		DA15FFDA2BBD5FA900513DD7 /* DBEntities */ = {
 			isa = PBXGroup;
 			children = (
+				DAD60F982BC43220001ED57A /* DBImage.swift */,
+				DAD60F9D2BC43478001ED57A /* DBPower.swift */,
+				DAD60F9F2BC434B7001ED57A /* DBCharacter.swift */,
 			);
 			path = DBEntities;
 			sourceTree = "<group>";
@@ -332,6 +360,7 @@
 				DA15FFFF2BBD665400513DD7 /* Repository.swift */,
 				DA1500012BBD668700513DD7 /* RepositoryImplementation.swift */,
 				DA1500032BBD66D000513DD7 /* RemoteDataSource.swift */,
+				DAD60FA12BC43658001ED57A /* LocalDataSource.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -393,6 +422,10 @@
 			children = (
 				DAD60F7D2BC3F5E7001ED57A /* SearchCharacterUseCase.swift */,
 				DAD60F7F2BC3F6A5001ED57A /* GetCharacterDetailUseCase.swift */,
+				DAD60FA32BC4384D001ED57A /* SaveCharacterUseCase.swift */,
+				DAD60FA52BC438A0001ED57A /* RemoveCharacterUseCase.swift */,
+				DAD60FA72BC438D7001ED57A /* ExistCharacterUseCase.swift */,
+				DAD60FA92BC4392D001ED57A /* GetCharactersUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -412,6 +445,17 @@
 				DAD60F872BC3FCFF001ED57A /* PreviewView.swift */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		DAD60F912BC43101001ED57A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60F922BC4310A001ED57A /* Persistence.swift */,
+				DAD60F942BC431A6001ED57A /* CoreDataStack.swift */,
+				DAD60F962BC431C1001ED57A /* DBManager.swift */,
+				DAD60F9A2BC43252001ED57A /* Model.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,29 +592,41 @@
 				DAD60F702BC3ECBD001ED57A /* FavoritesView.swift in Sources */,
 				DA15FFE82BBD612300513DD7 /* ServerPower.swift in Sources */,
 				DA15FFD82BBD5F3F00513DD7 /* Constants.swift in Sources */,
+				DAD60FA62BC438A0001ED57A /* RemoveCharacterUseCase.swift in Sources */,
 				DA15FFD62BBD5EC800513DD7 /* HTTPError.swift in Sources */,
+				DAD60FA82BC438D7001ED57A /* ExistCharacterUseCase.swift in Sources */,
 				DA1500042BBD66D000513DD7 /* RemoteDataSource.swift in Sources */,
 				DA15FFEE2BBD61C200513DD7 /* ServerCharacter.swift in Sources */,
 				DAD60F7E2BC3F5E7001ED57A /* SearchCharacterUseCase.swift in Sources */,
 				DA15FFD32BBD5E8100513DD7 /* ComicsNetworkManager.swift in Sources */,
 				DAD60F882BC3FCFF001ED57A /* PreviewView.swift in Sources */,
+				DAD60F932BC4310A001ED57A /* Persistence.swift in Sources */,
 				DA15FFE22BBD603400513DD7 /* ServerBaseResponse.swift in Sources */,
+				DAD60FA02BC434B7001ED57A /* DBCharacter.swift in Sources */,
 				DAD60F902BC42FA1001ED57A /* FavoritesLocalization.swift in Sources */,
 				DA1500022BBD668700513DD7 /* RepositoryImplementation.swift in Sources */,
 				DA1500002BBD665400513DD7 /* Repository.swift in Sources */,
 				DAD60F832BC3F73B001ED57A /* CharacterListView.swift in Sources */,
 				DAD60F792BC3F4A1001ED57A /* CharacterDetailViewModel.swift in Sources */,
+				DAD60F952BC431A6001ED57A /* CoreDataStack.swift in Sources */,
+				DAD60FA42BC4384D001ED57A /* SaveCharacterUseCase.swift in Sources */,
+				DAD60F972BC431C1001ED57A /* DBManager.swift in Sources */,
 				DAD60F762BC3F14C001ED57A /* SearchLocalization.swift in Sources */,
 				DAD60F8C2BC42CD3001ED57A /* CharacterImageView.swift in Sources */,
 				DAD60F8A2BC4086D001ED57A /* CharacterDetailLocalization.swift in Sources */,
 				DAD60F6E2BC3ECA1001ED57A /* SearchView.swift in Sources */,
 				DA15FFDE2BBD5FD300513DD7 /* ServerImageModel.swift in Sources */,
 				DAD60F722BC3EE27001ED57A /* TabBarLocalization.swift in Sources */,
+				DAD60FAA2BC4392D001ED57A /* GetCharactersUseCase.swift in Sources */,
 				DAD60F6A2BC3EBF7001ED57A /* Tab.swift in Sources */,
+				DAD60FA22BC43658001ED57A /* LocalDataSource.swift in Sources */,
 				DA15FFEA2BBD618200513DD7 /* Power.swift in Sources */,
 				DAD60F7B2BC3F514001ED57A /* CharacterDetailView.swift in Sources */,
+				DAD60F9C2BC43252001ED57A /* Model.xcdatamodeld in Sources */,
+				DAD60F9E2BC43478001ED57A /* DBPower.swift in Sources */,
 				DAD60F852BC3FA29001ED57A /* Value.swift in Sources */,
 				DAD60F8E2BC42EC2001ED57A /* FavoritesViewModel.swift in Sources */,
+				DAD60F992BC43220001ED57A /* DBImage.swift in Sources */,
 				DA15FFEC2BBD61AD00513DD7 /* Gender.swift in Sources */,
 				DA15FFE62BBD606E00513DD7 /* ServerOrigin.swift in Sources */,
 				DAD60F742BC3EFBB001ED57A /* SearchViewModel.swift in Sources */,
@@ -939,6 +995,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAD60F9A2BC43252001ED57A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAD60F9B2BC43252001ED57A /* Model.xcdatamodel */,
+			);
+			currentVersion = DAD60F9B2BC43252001ED57A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA15FF9B2BBD5DC900513DD7 /* Project object */;
 }

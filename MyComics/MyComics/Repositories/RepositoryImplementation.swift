@@ -11,9 +11,12 @@ import Combine
 class RepositoryImplementation {
     
     private let remoteDataSource: RemoteDataSource
+    private let localDataSource: LocalDataSource
     
-    init(remoteDataSource: RemoteDataSource = RemoteDataSource()) {
+    init(remoteDataSource: RemoteDataSource = RemoteDataSource(),
+         localDataSource: LocalDataSource = LocalDataSource()) {
         self.remoteDataSource = remoteDataSource
+        self.localDataSource = localDataSource
     }
 }
 
@@ -44,15 +47,44 @@ extension RepositoryImplementation: Repository {
     
     func getCharacter(id: Int) -> AnyPublisher<Character, Error> {
         
-        return remoteDataSource.getCharacter(id: id).map { serverCharacter -> Character in
+        if let character = localDataSource.getCharacter(id: id) {
             
-            // convert to entity
-            let character = serverCharacter.results.converToEntity()
+            return Just(character)
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
             
-            // Return
-            return character
+        } else {
+            
+            return remoteDataSource.getCharacter(id: id).map { serverCharacter -> Character in
+                
+                // convert to entity
+                let character = serverCharacter.results.converToEntity()
+                
+                // Return
+                return character
+            }
+            .mapError({ $0 })
+            .eraseToAnyPublisher()
         }
-        .mapError({ $0 })
-        .eraseToAnyPublisher()
+    }
+    
+    func saveCharacter(character: Character) {
+        
+        localDataSource.saveCharacter(character: character)
+    }
+    
+    func removeCharacter(character: Character) {
+        
+        localDataSource.removeCharacter(character: character)
+    }
+    
+    func existCharacter(character: Character) -> Bool {
+        
+        return localDataSource.existCharacter(character: character)
+    }
+    
+    func getCharacters() -> [Character] {
+        
+        return localDataSource.getCharacters()
     }
 }

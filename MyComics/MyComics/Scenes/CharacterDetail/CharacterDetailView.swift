@@ -20,6 +20,8 @@ struct CharacterDetailView: View {
         }.onAppear {
             
             viewModel.getCharacterDetail()
+            
+            viewModel.checkIsFavorite()
         }
     }
 }
@@ -88,6 +90,26 @@ private extension CharacterDetailView {
                 
                 Text(viewModel.character.realName)
                     .font(.body)
+                
+                Button(action: {
+                    
+                    viewModel.markAsFavorite()
+                    
+                }) {
+                    
+                    Spacer()
+                    
+                    if viewModel.isFavorite {
+                        
+                        Image(systemName: viewModel.favIconFilled)
+                            .foregroundColor(.red)
+                        
+                    } else {
+                        
+                        Image(systemName: viewModel.favIcon)
+                            .foregroundColor(.red)
+                    }
+                }
             }
             
             Spacer()

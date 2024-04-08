@@ -14,7 +14,11 @@ class CharacterDetailViewModel: ObservableObject {
     
     let localization: CharacterDetailLocalization
     
+    public var favIcon: String = "heart"
+    public var favIconFilled: String = "heart.fill"
+    
     @Published public private(set) var character: Character
+    @Published public var isFavorite: Bool = false
     @Published var state: State = State.idle
     
     // Cancellables
@@ -50,6 +54,25 @@ class CharacterDetailViewModel: ObservableObject {
             
                 self.character = character
             })
+    }
+    
+    func checkIsFavorite() {
+        
+        isFavorite = ExistCharacterUseCase().execute(character: character)
+    }
+    
+    func markAsFavorite() {
+        
+        if isFavorite {
+            
+            RemoveCharacterUseCase().execute(character: character)
+            
+        } else {
+            
+            SaveCharacterUseCase().execute(character: character)
+        }
+        
+        checkIsFavorite()
     }
 }
 
