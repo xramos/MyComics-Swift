@@ -41,7 +41,7 @@ struct CharacterListView: View {
             
             Divider()
         }
-        .padding([.leading, .trailing], Value.padding)
+        //.padding([.leading, .trailing], Value.padding)
     }
 }
 

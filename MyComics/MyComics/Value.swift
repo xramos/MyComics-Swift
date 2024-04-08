@@ -11,4 +11,8 @@ struct Value {
     
     static let padding: CGFloat = 8
     static let paddingLarge: CGFloat = 16
+    
+    static let spacing: CGFloat = 16
+    
+    static let spaceHeight: CGFloat = 8
 }
