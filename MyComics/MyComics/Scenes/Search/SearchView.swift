@@ -71,7 +71,8 @@ struct SearchView: View {
                 
                 NavigationLink(destination: CharacterDetailView(viewModel: CharacterDetailViewModel(character: character))) {
                     
-                    CharacterListView(name: character.name,
+                    CharacterListView(image: character.image?.smallUrl,
+                                      name: character.name,
                                       realName: character.realName)
                 }
                 .buttonStyle(.plain)

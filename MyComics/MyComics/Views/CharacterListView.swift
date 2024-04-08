@@ -10,8 +10,8 @@ import SwiftUI
 struct CharacterListView: View {
     
     var image: String?
-        var name: String
-        var realName: String
+    var name: String
+    var realName: String
     
     init(image: String? = nil, name: String, realName: String) {
         self.image = image
@@ -25,7 +25,9 @@ struct CharacterListView: View {
             
             HStack(spacing: Value.padding) {
                 
-                // Image
+                CharacterImageView(imageString: image)
+                    .frame(width: Value.width, height: Value.height)
+                    .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .circular))
                 
                 VStack(alignment: .leading) {
                     
@@ -41,7 +43,6 @@ struct CharacterListView: View {
             
             Divider()
         }
-        //.padding([.leading, .trailing], Value.padding)
     }
 }
 

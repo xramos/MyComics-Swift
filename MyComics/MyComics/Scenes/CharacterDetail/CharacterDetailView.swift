@@ -77,7 +77,9 @@ private extension CharacterDetailView {
         
         HStack(alignment: .center, spacing: Value.spacing) {
             
-            // Image
+            CharacterImageView(imageString: viewModel.character.image?.superUrl)
+                .frame(width: Value.widthLarge, height: Value.heightLarge)
+                .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .circular))
             
             VStack(alignment: .leading, spacing: Value.spacing) {
                 

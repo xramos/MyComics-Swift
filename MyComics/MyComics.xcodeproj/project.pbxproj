@@ -50,6 +50,7 @@
 		DAD60F852BC3FA29001ED57A /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F842BC3FA29001ED57A /* Value.swift */; };
 		DAD60F882BC3FCFF001ED57A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F872BC3FCFF001ED57A /* PreviewView.swift */; };
 		DAD60F8A2BC4086D001ED57A /* CharacterDetailLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F892BC4086D001ED57A /* CharacterDetailLocalization.swift */; };
+		DAD60F8C2BC42CD3001ED57A /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		DAD60F842BC3FA29001ED57A /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		DAD60F872BC3FCFF001ED57A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		DAD60F892BC4086D001ED57A /* CharacterDetailLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLocalization.swift; sourceTree = "<group>"; };
+		DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD60F822BC3F73B001ED57A /* CharacterListView.swift */,
+				DAD60F8B2BC42CD3001ED57A /* CharacterImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				DAD60F832BC3F73B001ED57A /* CharacterListView.swift in Sources */,
 				DAD60F792BC3F4A1001ED57A /* CharacterDetailViewModel.swift in Sources */,
 				DAD60F762BC3F14C001ED57A /* SearchLocalization.swift in Sources */,
+				DAD60F8C2BC42CD3001ED57A /* CharacterImageView.swift in Sources */,
 				DAD60F8A2BC4086D001ED57A /* CharacterDetailLocalization.swift in Sources */,
 				DAD60F6E2BC3ECA1001ED57A /* SearchView.swift in Sources */,
 				DA15FFDE2BBD5FD300513DD7 /* ServerImageModel.swift in Sources */,
