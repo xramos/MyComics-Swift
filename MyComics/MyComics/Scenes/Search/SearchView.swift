@@ -74,7 +74,7 @@ struct SearchView: View {
                     CharacterListView(name: character.name,
                                       realName: character.realName)
                 }
-                //.buttonStyle(.plain)
+                .buttonStyle(.plain)
             }
         }
     }

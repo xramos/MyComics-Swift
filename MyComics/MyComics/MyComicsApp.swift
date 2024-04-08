@@ -20,8 +20,11 @@ struct MyComicsApp: App {
             
             ZStack {
                 
-                TabBar()
-                    .opacity(inactive ? 0 : 1)
+                NavigationView {
+                    
+                    TabBar()
+                        .opacity(inactive ? 0 : 1)
+                }
                 
                 PreviewView()
                     .opacity(inactive ? 1 : 0)
