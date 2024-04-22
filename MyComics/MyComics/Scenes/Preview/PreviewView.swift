@@ -11,14 +11,17 @@ struct PreviewView: View {
     
     var body: some View {
         
-        Color.red
-            /*.overlay(
-                VStack(alignment: .center) {
-                    Image("wefoxLogoColor")
-                }
-            )*/
-            .accessibility(hidden: true)
+        ZStack {
+            
+            LinearGradient(colors: [Colors.primary, Color.black],
+                           startPoint: .top,
+                           endPoint: .bottom)
             .ignoresSafeArea()
+            
+            Text("My Comics")
+                .font(.largeTitle)
+                .foregroundStyle(.white)
+        }
     }
 }
 
