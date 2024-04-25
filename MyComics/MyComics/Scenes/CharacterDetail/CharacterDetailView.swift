@@ -23,6 +23,7 @@ struct CharacterDetailView: View {
             
             viewModel.checkIsFavorite()
         }
+        .appBackground()
     }
 }
 
@@ -63,12 +64,16 @@ private extension CharacterDetailView {
         VStack(alignment: .center) {
             
             headerView
+                .background(Colors.neutral)
+                .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .continuous))
             
-            Divider()
+            Spacer().frame(height: 16)
             
             detailView
+                .background(Colors.neutral)
+                .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .continuous))
         }
-        .padding([.leading, .trailing], Value.paddingLarge)
+        .padding(Value.paddingLarge)
     }
 }
 
@@ -81,7 +86,7 @@ private extension CharacterDetailView {
             
             CharacterImageView(imageString: viewModel.character.image?.superUrl)
                 .frame(width: Value.widthLarge, height: Value.heightLarge)
-                .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .circular))
+                .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .continuous))
             
             VStack(alignment: .leading, spacing: Value.spacing) {
                 
@@ -154,6 +159,7 @@ private extension CharacterDetailView {
                          value: viewModel.character.deck)
             }
         }
+        .padding(5)
     }
     
     func titleView(title: String, value: String) -> some View {

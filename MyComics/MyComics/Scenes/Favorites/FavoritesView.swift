@@ -33,6 +33,7 @@ struct FavoritesView: View {
             
             viewModel.getFavoriteCharacters()
         }
+        .appBackground()
     }
     
     @ViewBuilder
@@ -51,6 +52,7 @@ struct FavoritesView: View {
                 .buttonStyle(.plain)
             }
         }
+        .padding(5)
     }
 }
 
