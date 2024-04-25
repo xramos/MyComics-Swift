@@ -27,7 +27,6 @@ struct CharacterListView: View {
                 
                 CharacterImageView(imageString: image)
                     .frame(width: Value.width, height: Value.height)
-                    .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .circular))
                 
                 VStack(alignment: .leading) {
                     
@@ -40,9 +39,10 @@ struct CharacterListView: View {
                 
                 Spacer()
             }
-            
-            Divider()
+            .background(Colors.neutral)
+            .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .continuous))
         }
+        .padding(.bottom, 5)
     }
 }
 

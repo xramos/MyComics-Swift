@@ -11,17 +11,18 @@ struct PreviewView: View {
     
     var body: some View {
         
-        ZStack {
+        VStack {
             
-            LinearGradient(colors: [Colors.primary, Color.black],
+            /*LinearGradient(colors: [Colors.primary, Color.secondary],
                            startPoint: .top,
                            endPoint: .bottom)
-            .ignoresSafeArea()
+            .ignoresSafeArea()*/
             
             Text("My Comics")
                 .font(.largeTitle)
                 .foregroundStyle(.white)
         }
+        .appBackground()
     }
 }
 

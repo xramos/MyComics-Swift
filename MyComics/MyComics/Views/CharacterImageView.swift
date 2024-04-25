@@ -26,6 +26,7 @@ struct CharacterImageView: View {
                     if let image = phase.image {
                         
                         image.resizable()
+                            .scaledToFit()
                             .aspectRatio(contentMode: .fit)
 
                     } else if phase.error != nil {

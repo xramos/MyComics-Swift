@@ -17,25 +17,29 @@ struct SearchView: View {
         
         VStack {
             
-            searchCharacterView
-            
-            Divider()
-            
-            if viewModel.showProgressView {
+            VStack {
                 
-                ProgressView()
+                searchCharacterView
+                
+                if viewModel.showProgressView {
+                    
+                    ProgressView()
+                }
+                
+                charactersListView
             }
-            
-            charactersListView
+            .padding(.top, Value.padding)
+            .padding([.leading, .trailing], Value.paddingLarge)
         }
-        .padding(.top, Value.padding)
-        .padding([.leading, .trailing], Value.paddingLarge)
+        .appBackground()
     }
     
     @ViewBuilder
     var searchCharacterView: some View {
         
         HStack(spacing: Value.padding) {
+            
+            Spacer().frame(width: 5)
             
             TextField(viewModel.localization.textLabel, text: $searchText)
             
@@ -59,7 +63,12 @@ struct SearchView: View {
                     viewModel.search(searchInput: searchText)
                 }
             }
+            
+            Spacer().frame(width: 5)
         }
+        .padding([.top, .bottom], Value.paddingLarge)
+        .background(Colors.neutral)
+        .clipShape(RoundedRectangle(cornerRadius: Value.cornerRadius, style: .continuous))
     }
     
     @ViewBuilder
