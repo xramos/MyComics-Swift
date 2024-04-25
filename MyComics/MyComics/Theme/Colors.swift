@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+// https://dribbble.com/search/ios
+// https://www.canva.com/colors/color-wheel
 struct Colors {
     
-    static let primary = Color(red: 1, green: 44/255, blue: 93/255) // #FF2C5DA7
-    static let secondary = Color(red: 1, green: 190/255, blue: 0) // #FFBE0034
+    static let primary = Color(red: 220/255, green: 2/255, blue: 70/255)
+    static let secondary = Color(red: 64/255, green: 8/255, blue: 30/255)
     
     static let neutral = Color(red: 222/255, green: 222/255, blue: 222/255)
 }

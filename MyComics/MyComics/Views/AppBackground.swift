@@ -20,7 +20,7 @@ struct AppBackground<Content: View>: View {
         ZStack {
             
             Rectangle()
-                .fill(LinearGradient(colors: [Colors.primary, Color.secondary],
+                .fill(LinearGradient(colors: [Colors.primary, Colors.secondary],
                                      startPoint: .top,
                                      endPoint: .bottom))
                 .ignoresSafeArea()

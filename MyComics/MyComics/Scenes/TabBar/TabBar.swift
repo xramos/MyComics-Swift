@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     
-    @State var activeTab: Tab = Tab.search
+    @State var activeTab: TabItem = TabItem.search
     
     let localization: TabBarLocalization = TabBarLocalization()
     
@@ -24,29 +24,40 @@ struct TabBar: View {
             
             SearchView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text(localization.seachTabTitle)
+                    tabView(tabItem: .search)
                 }
-                .tag(Tab.search)
+                .tag(TabItem.search)
             
             FavoritesView()
                 .tabItem {
-                    Image(systemName: "heart")
-                    Text(localization.favoritesTabTitle)
+                    tabView(tabItem: .favorites)
                 }
-                .tag(Tab.favorites)
+                .tag(TabItem.favorites)
         }
+        .tint(Color.black)
+        .background(Colors.neutral)
         .navigationTitle(getNavBarTitle(for: activeTab))
         .navigationBarTitleDisplayMode(.large)
     }
     
-    func getNavBarTitle(for tabItemType: Tab) -> String {
+    func getNavBarTitle(for tabItemType: TabItem) -> String {
         
         switch tabItemType {
         case .search:
             return localization.seachTabTitle
         case .favorites:
             return localization.favoritesTabTitle
+        }
+    }
+    
+    func tabView(tabItem: TabItem) -> some View {
+        
+        Group {
+            
+            Image(systemName: tabItem.iconName)
+                .renderingMode(.template)
+            
+            Text(tabItem.title)
         }
     }
 }

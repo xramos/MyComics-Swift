@@ -119,6 +119,7 @@ private extension CharacterDetailView {
             
             Spacer()
         }
+        .padding(5)
     }
     
     @ViewBuilder
